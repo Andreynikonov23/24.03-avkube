@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.sapteh.controller.Controller">
+   <children>
+      <AnchorPane layoutX="-8.0" prefHeight="432.0" prefWidth="618.0">
+         <children>
+            <TableView fx:id="mainTableView" layoutX="23.0" layoutY="14.0" prefHeight="322.0" prefWidth="580.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="10.0">
+              <columns>
+                <TableColumn fx:id="idColumn" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="nameColumn" prefWidth="101.0" text="Name" />
+                  <TableColumn fx:id="manufacturerColumn" prefWidth="92.0" text="Manufacturer" />
+                  <TableColumn fx:id="descriptionColumn" prefWidth="107.0" text="Description" />
+                  <TableColumn fx:id="quantityColumn" prefWidth="94.0" text="Quantity" />
+                  <TableColumn fx:id="costColumn" prefWidth="114.0" text="Cost" />
+              </columns>
+            </TableView>
+            <Button fx:id="newButton" layoutX="23.0" layoutY="372.0" mnemonicParsing="false" onAction="#onActionNewButton" text="New" />
+            <Button fx:id="buttonDelete" layoutX="551.0" layoutY="372.0" mnemonicParsing="false" onAction="#onActionButtonDelete" text="Delete" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
